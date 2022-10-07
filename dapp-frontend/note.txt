@@ -1,0 +1,69 @@
+
+1. 全栈 = 后端（智能合约） + 前端（html/react/网页 等等）
+
+
+2. 前端web3主要工作
+  1. 连接钱包
+  2. 读取链上信息
+  3. 发起交易
+  4. 将UI设计开发成网页
+  5. 交互开发
+  6. 网站部署还有维护
+
+
+3. react 项目 文件结构
+my-app/
+  README.md
+  node_modules/   包/依赖库
+  package.json    项目配置文件
+  .env            环境变量
+
+  public/
+    index.html    网页模版
+    favicon.ico
+  src/
+    assets            资源文件夹
+    util              开发者自己写的工具
+    App.css           格式，style 文件
+    App.js            react 组件
+    index.css         格式，style 文件
+    index.js          JavaScript 入口文件
+    tinTinToken.js    react 组件
+
+
+4. metamask 的使用
+  1. window.ethereum 全局API
+
+  2. 使用request 来通过metamask 与区块链进行交互。
+
+  window.ethereum.request(args: RequestArguments): Promise<unknown>;
+
+  interface RequestArguments {
+    method: string;
+    params?: unknown[] | object;
+  }
+
+  
+5. 创建web3 contracts 实例
+  a. 创建web3 instace with url
+  b. 提供contract abi 已经 contract 地址，告诉web3js，如何跟我们智能合约进行交互。
+
+6. react hooks
+
+  a. useState()
+    const [walletAddress, setWallet] = useState("");
+    每当setWallet函数被call的时候，页面都会重新render，从而更新页面的值。
+
+  
+  b. useEffect
+    //页面打开的时候执行一次
+    useEffect(() => {
+        // Just run the first time
+        console.log('render')
+      }, [])
+
+    // 当a或者b改变时，都会执行一次。
+    useEffect(() => {
+        // Just run the first time
+        console.log('render')
+      }, [a,b])
