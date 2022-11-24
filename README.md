@@ -1,9 +1,12 @@
-# Solidity 实践，Hardhat使用教程
+# web3 前端开发
 
-Hardhat 英文文档： https://hardhat.org/tutorial<br/>
-Hardhat 中文文档： https://learnblockchain.cn/docs/hardhat/tutorial/<br/>
-Mocha： https://mochajs.org/<br/>
-Etherjs： https://docs.ethers.io/v5/<br/>
+Javascript 教程： https://www.youtube.com/watch?v=vEROU2XtPR8<br/>
+React 教程：  https://www.youtube.com/watch?v=BwuLxPH8IDs&t=3925s<br/>
+             https://www.bilibili.com/video/BV1gh411U7JD?p=2<br/>
+
+MetaMask API：  https://docs.metamask.io/guide/ethereum-provider.html#table-of-contents<br/>
+Wagmi：  https://wagmi.sh/react/getting-started<br/>
+Alchemy frontend 教程：  https://alchemyapi.gitbook.io/alchemy/tutorials/hello-world-smart-contract/part-4<br/>
+合约自动化： https://app.gelato.network/<br/>
 Alchemy： https://dashboard.alchemy.com/<br/>
 Goerli etherscan: https://goerli.etherscan.io/<br/>
-Javascript 教程： https://www.runoob.com/js/js-tutorial.html
